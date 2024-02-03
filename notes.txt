@@ -1,0 +1,16 @@
+Cucumber
+1. POs
+2. Devs
+3. Automation Engineers
+
+US - BDD format 
+Given I open the browser
+And I enter username
+And I enter password
+When I click login
+Then i should see the Dashboard 
+
+uncaught exceptions:
+1. try catch block 
+2. cypress inbuilt uncaught exceptions
+
