@@ -1,0 +1,10 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@yahoo.com",
+  "company": "Google Inc",
+  "password": "Test1234",
+  "invalidPassword": "Test@@@@@@",
+  "message": "Your registration completed",
+  "invalidMessage": "We're sorry, an internal error occurred."
+}

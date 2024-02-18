@@ -14,3 +14,5 @@ uncaught exceptions:
 1. try catch block 
 2. cypress inbuilt uncaught exceptions
 
+pre-defined env variable:
+CYPRESS_BASE_URL=https://demo.nopcommerce.com npm run test-chrome

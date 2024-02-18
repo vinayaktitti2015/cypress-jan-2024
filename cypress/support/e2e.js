@@ -15,20 +15,25 @@
 
 // Import commands.js using ES2015 syntax:
 import "./commands";
+import "./register";
+import "./apiMethods";
+
 import "xpath_cypress";
-import "cypress-iframe"
+import "cypress-iframe";
+
+import "cypress-mochawesome-reporter/register";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
 Cypress.on("uncaught:exception", (error) => {
   return false;
-//   if (
-//     error.message.includes(
-//       "Cannot read properties of undefined (reading 'msie')"
-//     ) ||
-//     error.message.includes("Script error.")
-//   ) {
-//     return false;
-//   }
+  //   if (
+  //     error.message.includes(
+  //       "Cannot read properties of undefined (reading 'msie')"
+  //     ) ||
+  //     error.message.includes("Script error.")
+  //   ) {
+  //     return false;
+  //   }
 });

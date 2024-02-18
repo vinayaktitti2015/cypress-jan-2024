@@ -1,0 +1,13 @@
+{
+  "baseUrl": "https://staging.lazada.com.my/",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": true,
+    "json": true
+  },
+  "env": {
+    "ENVIRONMENT": "staging",
+    "CYPRESS_RETRIES": 2
+  }
+}

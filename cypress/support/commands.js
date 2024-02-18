@@ -25,17 +25,20 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // custom commands
-Cypress.Commands.add("userLogin", () => {
-  cy.get('[placeholder="Username"]').clear().type("Admin"); // 4secs
-  cy.get('[placeholder="Password"]').clear().type("admin123"); // 4 secs
-  cy.get('[type="submit"]').click(); // 4 secs
+Cypress.Commands.add("userLogin", (name) => {
+  cy.session(name, () => {
+    cy.visit("/web/index.php/auth/login");
+    cy.get('[placeholder="Username"]').clear().type("Admin"); // 4secs
+    cy.get('[placeholder="Password"]').clear().type("admin123"); // 4 secs
+    cy.get('[type="submit"]').click(); // 4 secs
 
-  // url assertion
-  cy.url().should("include", "/web/index.php/dashboard/index");
-  cy.get(".oxd-topbar-header-breadcrumb-module").should(
-    "have.text",
-    "Dashboard"
-  );
+    // url assertion
+    cy.url().should("include", "/web/index.php/dashboard/index");
+    cy.get(".oxd-topbar-header-breadcrumb-module").should(
+      "have.text",
+      "Dashboard"
+    );
+  });
 });
 
 Cypress.Commands.add("userSignup", () => {

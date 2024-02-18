@@ -1,7 +1,6 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: "93b7nz",
   reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     charts: true,
@@ -31,6 +30,10 @@ module.exports = defineConfig({
     baseUrl: "https://opensource-demo.orangehrmlive.com",
     defaultCommandTimeout: 10000,
     chromeWebSecurity: false,
-    specPattern: "cypress/specs/**/*.cy.js",
+    specPattern: "cypress/specs/**.*.js",
+    env: {
+      ENVIRONMENT: "uat",
+      CYPRESS_RETRIES: 2,
+    },
   },
 });
