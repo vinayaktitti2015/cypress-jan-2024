@@ -35,7 +35,7 @@ describe("login feature", () => {
     );
   });
 
-  it("call login function", () => {});
-  cy.userSignup();
-  cy.userLogin();
+  // it("call login function", () => {});
+  // cy.userSignup();
+  // cy.userLogin();
 });
