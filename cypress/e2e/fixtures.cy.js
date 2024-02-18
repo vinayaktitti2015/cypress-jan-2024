@@ -48,10 +48,10 @@ describe("webui controls", () => {
       // verify form submission
       cy.contains(testdata.message).should("be.visible");
 
-      let text = "";
-      cy.get("loc").then(($element) => {
-        text = $element.text();
-      });
+      // let text = "";
+      // cy.get("loc").then(($element) => {
+      //   text = $element.text();
+      // });
     });
   });
 });
