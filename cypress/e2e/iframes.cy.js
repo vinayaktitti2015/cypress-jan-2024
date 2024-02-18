@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe("iframes handling", () => {
   it("datepicker handling", () => {
-    cy.visit("/");
+    cy.visit("https://testautomationpractice.blogspot.com/");
 
     //switch to iframe
     cy.switchToIframe("#frame-one796456169")
@@ -21,7 +21,7 @@ describe("iframes handling", () => {
   });
 
   it("cypress-iframe usage - datepicker handling", () => {
-    cy.visit("/");
+    cy.visit("https://testautomationpractice.blogspot.com/");
 
     //switch to iframe
     cy.frameLoaded();

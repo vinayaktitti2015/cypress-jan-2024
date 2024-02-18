@@ -9,7 +9,7 @@ describe("login feature", () => {
   });
 
   beforeEach(() => {
-    cy.visit("web/index.php/auth/login");
+    cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     cy.get('[placeholder="Username"]').clear().type("Admin"); // 4secs
     cy.get('[placeholder="Password"]').clear().type("admin123"); // 4 secs
     cy.get('[type="submit"]').click(); // 4 secs

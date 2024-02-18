@@ -1,5 +1,5 @@
 describe('test suite', () => {
-    it('', () => {
+    it.skip('', () => {
         cy.get("loca")
           .invoke("removeAttr", "readonly")
           .type("999{enter}")

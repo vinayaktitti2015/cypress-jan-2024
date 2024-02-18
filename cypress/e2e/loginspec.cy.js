@@ -3,7 +3,7 @@ describe("login feature", () => {
   before(() => {});
 
   beforeEach(() => {
-    cy.visit("web/index.php/auth/login");
+    cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
   });
 
   // auto-wait for 4 seconds

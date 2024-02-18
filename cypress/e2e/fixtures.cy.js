@@ -2,7 +2,7 @@
 
 describe("webui controls", () => {
   beforeEach(() => {
-    cy.visit("samplepagetest/");
+    cy.visit("https://www.globalsqa.com/samplepagetest/");
   });
   it("test form submission successfully", () => {
     cy.fixture("user").then((testdata) => {

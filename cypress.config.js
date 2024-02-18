@@ -28,9 +28,10 @@ module.exports = defineConfig({
         return launchoptions;
       });
     },
-    baseUrl: "https://opensource-demo.orangehrmlive.com",
+    //baseUrl: "https://opensource-demo.orangehrmlive.com",
     defaultCommandTimeout: 10000,
     chromeWebSecurity: false,
+    video: true,
     // specPattern: "cypress/specs/**/*.cy.js",
   },
 });
