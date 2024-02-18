@@ -31,6 +31,6 @@ module.exports = defineConfig({
     baseUrl: "https://opensource-demo.orangehrmlive.com",
     defaultCommandTimeout: 10000,
     chromeWebSecurity: false,
-    specPattern: "cypress/specs/**/*.cy.js",
+    // specPattern: "cypress/specs/**/*.cy.js",
   },
 });
